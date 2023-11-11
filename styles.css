@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+:root{
+    --color-primary: #2f2e80;
+    --color-success: #00bf8e;
+    --color-warning: #f7c94b;
+    --color-danger: #f75842;
+    --color-danger-variant: rgba(247, 88, 66, 0.4);
+    --color-light: rgba(255, 255, 255, 0.7);
+    --color-white: #fff;
+    --color-black: #000;
+    --color-bg: #3c4096;
+    --color-bg1: #f7f9ff;
+    --color-bg2: #424890;
+
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 400ms ease;
+}
+
+body{
+    min-height: 100vh;
+    background: var(--color-primary);
+    display: grid;
+    place-content: center;
+
+}
+
+body h5 a{
+    text-decoration: none;
+}
+
+body h5 a i{
+    color: #fff;
+    font-size: 3rem;
+    cursor: pointer;
+
+}
+
+body h5{
+    position: absolute;
+    font-size: 2em;
+    bottom: 2rem;
+    color: var(--color-white);
+    margin-left: 24rem;
+}
+
+.container{
+    position: relative;
+    min-width: 80vw;
+    height: fit-content;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    font-weight: bolder;
+    font-style: normal;
+    line-height: 12px;
+    font-variant: normal;
+    font-kerning: auto;
+    font-stretch: 100%;
+}
+
+.container .badge{
+    position: relative;
+    width: 120px;
+    height: 80px;
+    background: var(--color-primary);
+}
+
+.container .badge .circle{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 12px;
+}
+
+.container .badge strong{
+    position: absolute;
+    bottom: 7px;
+    left: 7px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bolder;
+    font-style: normal;
+    line-height: 12px;
+    font-variant: normal;
+    font-kerning: auto;
+    font-stretch: 100%;
+}
+
