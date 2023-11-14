@@ -26,11 +26,11 @@
 }
 
 body{
-    min-height: 100vh;
+    height: 100vh;
     background: var(--color-primary);
-    display: grid;
-    place-content: center;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 body h5 a{
@@ -45,44 +45,44 @@ body h5 a i{
 }
 
 body h5{
-    position: absolute;
+    position: relative;
     font-size: 2em;
     bottom: 2rem;
     color: var(--color-white);
-    margin-left: 24rem;
+    margin-left: 3rem;
+    margin-top: 5rem;
 }
 
 .container{
     position: relative;
-    min-width: 80vw;
-    height: fit-content;
     border-radius: 6px;
-    padding: 30px;
-    margin: 0 15px;
     background: #fff;
+    top: 0;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    font-size: 1rem;
+    padding: 2rem;
+    max-width: 80vw;
+    /*font-size: 1rem;
     font-weight: bolder;
     font-style: normal;
     line-height: 12px;
     font-variant: normal;
     font-kerning: auto;
-    font-stretch: 100%;
+    font-stretch: 100%;*/
 }
 
 .container .badge{
     position: relative;
-    width: 120px;
-    height: 80px;
+    width: 80px;
+    height: 67px;
     background: var(--color-primary);
 }
-
 .container .badge .circle{
-    position: absolute;
-    width: 32px;
-    height: 32px;
+    position: relative;
+    width: 27px;
+    height: 27px;
     border-radius: 50%;
     background: #fff;
+    top: 5px;
     margin: 12px;
 }
 
@@ -98,5 +98,151 @@ body h5{
     font-variant: normal;
     font-kerning: auto;
     font-stretch: 100%;
+}
+
+
+
+
+
+
+@media (max-width: 541px) {
+    body{
+        background: var(--color-primary);
+        display: flex;
+       align-items: center;
+       justify-content: center;
+    
+    }
+
+    .general-cont{
+        width: 100%;
+    }
+
+
+    .container{
+        position: relative;
+        margin-left: 3.5rem;
+        height: 100%;
+        border-radius: 6px;
+        background: #fff;
+        top: 0;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        /*font-size: 1rem;
+        font-weight: bolder;
+        font-style: normal;
+        line-height: 12px;
+        font-variant: normal;
+        font-kerning: auto;
+        font-stretch: 100%;*/
+    }
+
+    .container .badge{
+        position: relative;
+        width: 80px;
+        height: 67px;
+        background: var(--color-primary);
+    }
+    
+    .container .badge .circle{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #fff;
+        margin: 5px;
+    }
+    
+    .container .badge strong{
+        position: absolute;
+        bottom: 7px;
+        left: 7px;
+        font-size: 20px;
+        color: #fff;
+        font-weight: bolder;
+        font-style: normal;
+        line-height: 12px;
+        font-variant: normal;
+        font-kerning: auto;
+        font-stretch: 100%;
+    }
+
+    body h5{
+        font-size: 1rem;
+        bottom: 0.3rem;
+        color: var(--color-white);
+        margin-left: 3.5rem;
+    }
+}
+
+
+@media (max-width:450px) {
+
+    body{
+        background: var(--color-primary);
+        display: flex;
+       align-items: center;
+       justify-content: center;
+    
+    }
+
+    .general-cont{
+        width: 100%;
+    }
+
+
+    .container{
+        position: relative;
+        margin-left: 2.4rem;
+        height: 100%;
+        border-radius: 6px;
+        background: #fff;
+        top: 0;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        /*font-size: 1rem;
+        font-weight: bolder;
+        font-style: normal;
+        line-height: 12px;
+        font-variant: normal;
+        font-kerning: auto;
+        font-stretch: 100%;*/
+    }
+
+    .container .badge{
+        position: relative;
+        width: 80px;
+        height: 67px;
+        background: var(--color-primary);
+    }
+    
+    .container .badge .circle{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #fff;
+        margin: 7px;
+    }
+    
+    .container .badge strong{
+        position: absolute;
+        bottom: 7px;
+        left: 7px;
+        font-size: 20px;
+        color: #fff;
+        font-weight: bolder;
+        font-style: normal;
+        line-height: 12px;
+        font-variant: normal;
+        font-kerning: auto;
+        font-stretch: 100%;
+    }
+
+    body h5{
+        font-size: 1rem;
+        bottom: 0.3rem;
+        color: var(--color-white);
+        margin-left: 2.4rem;
+    }
+    
 }
 
